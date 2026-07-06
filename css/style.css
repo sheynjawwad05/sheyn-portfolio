@@ -1,18 +1,56 @@
-/*=========================================
-            GOOGLE FONT
-=========================================*/
-
+/*==================================================
+                GOOGLE FONT
+==================================================*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
 
-/*=========================================
-              RESET
-=========================================*/
-
+/*==================================================
+                    RESET
+==================================================*/
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
 }
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    color:#132238;
+    background:linear-gradient(
+        135deg,
+        #ffffff 0%,
+        #f9fbff 40%,
+        #eef5ff 100%
+    );
+    overflow-x:hidden;
+}
+
+img{
+    display:block;
+    max-width:100%;
+    height:auto;
+}
+
+a{
+    text-decoration:none;
+}
+
+ul{
+    list-style:none;
+}
+
+button{
+    border:none;
+    outline:none;
+    cursor:pointer;
+    font-family:'Poppins',sans-serif;
+}
+/*==================================================
+                ROOT VARIABLES
+==================================================*/
 
 :root{
 
@@ -33,124 +71,124 @@
 
     --radius:22px;
 
-}
-
-html{
-
-    scroll-behavior:smooth;
+    --transition:.35s ease;
 
 }
 
-body{
-
-    font-family:'Poppins',sans-serif;
-
-   background:
-linear-gradient(
-135deg,
-#ffffff 0%,
-#f9fbff 40%,
-#eef5ff 100%
-);
-
-    color:var(--text);
-
-    overflow-x:hidden;
-
-}
-
-img{
-
-    display:block;
-
-    max-width:100%;
-
-}
-
-a{
-
-    text-decoration:none;
-
-}
-
-ul{
-
-    list-style:none;
-
-}
-
-button{
-
-    border:none;
-
-    cursor:pointer;
-
-    font-family:'Poppins',sans-serif;
-
-}
+/*==================================================
+                GLOBAL STYLES
+==================================================*/
 
 .container{
 
-    width:90%;
-
-    max-width:1400px;
+    width:min(92%,1400px);
 
     margin:auto;
 
 }
 
-p{
+section{
 
-    text-align:justify;
-
-    color:var(--paragraph);
-
-    line-height:1.9;
+    position:relative;
 
 }
 
-/*=========================================
-              HEADER
-=========================================*/
+p{
+
+    color:var(--paragraph);
+
+    font-size:17px;
+
+    line-height:1.9;
+
+    text-align:justify;
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+
+    color:var(--text);
+
+    font-weight:700;
+
+    line-height:1.2;
+
+}
+
+::selection{
+
+    background:var(--primary);
+
+    color:#fff;
+
+}
+/*==================================================
+                    HEADER
+==================================================*/
 
 .header{
 
     position:fixed;
 
-    top:20px;
+    top:18px;
+
     left:50%;
 
     transform:translateX(-50%);
 
-    width:92%;
+    width:min(94%,1400px);
 
-    height:90px;
+    height:88px;
 
-    background:rgba(255,255,255,.85);
+    padding:0 40px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    background:rgba(255,255,255,.82);
 
     backdrop-filter:blur(18px);
 
-    border:1px solid rgba(255,255,255,.6);
+    -webkit-backdrop-filter:blur(18px);
+
+    border:1px solid rgba(255,255,255,.45);
 
     border-radius:24px;
 
     box-shadow:var(--shadow);
 
-    display:flex;
-
-    justify-content:space-between;
-
-    align-items:center;
-
-    padding:0 40px;
-
     z-index:1000;
+
+    transition:var(--transition);
 
 }
 
-/*=========================================
-                LOGO
-=========================================*/
+.header.scrolled{
+
+    top:12px;
+
+    background:rgba(255,255,255,.95);
+
+    box-shadow:0 15px 40px rgba(0,0,0,.10);
+
+}
+
+.header>*{
+
+    flex-shrink:0;
+
+}
+/*==================================================
+                    LOGO
+==================================================*/
 
 .logo a{
 
@@ -176,7 +214,11 @@ p{
 
     border-radius:18px;
 
-    background:linear-gradient(135deg,var(--primary),#5f97ff);
+    background:linear-gradient(
+        135deg,
+        var(--primary),
+        #6ea8ff
+    );
 
     color:#fff;
 
@@ -184,17 +226,27 @@ p{
 
     font-weight:700;
 
-    box-shadow:0 12px 30px rgba(47,107,255,.35);
+    box-shadow:0 12px 30px rgba(47,107,255,.28);
+
+    transition:var(--transition);
+
+}
+
+.logo a:hover .logo-icon{
+
+    transform:rotate(-8deg) scale(1.06);
 
 }
 
 .logo span{
 
-    font-size:34px;
+    font-size:32px;
 
     font-weight:700;
 
     color:var(--text);
+
+    white-space:nowrap;
 
 }
 
@@ -203,10 +255,9 @@ p{
     color:var(--primary);
 
 }
-
-/*=========================================
-              NAVBAR
-=========================================*/
+/*==================================================
+                    NAVBAR
+==================================================*/
 
 .navbar{
 
@@ -214,7 +265,7 @@ p{
 
     align-items:center;
 
-    gap:45px;
+    gap:42px;
 
 }
 
@@ -224,11 +275,11 @@ p{
 
     color:var(--text);
 
-    font-size:18px;
+    font-size:17px;
 
     font-weight:600;
 
-    transition:.35s ease;
+    transition:var(--transition);
 
 }
 
@@ -238,13 +289,7 @@ p{
 
 }
 
-.navbar a.active{
-
-    color:var(--primary);
-
-}
-
-.navbar a.active::after{
+.navbar a::after{
 
     content:"";
 
@@ -254,19 +299,34 @@ p{
 
     bottom:-10px;
 
-    width:100%;
+    width:0;
 
     height:3px;
 
-    border-radius:30px;
+    border-radius:50px;
 
     background:var(--primary);
 
+    transition:width .35s ease;
+
 }
 
-/*=========================================
-             MY CV BUTTON
-=========================================*/
+.navbar a:hover::after,
+
+.navbar a.active::after{
+
+    width:100%;
+
+}
+
+.navbar a.active{
+
+    color:var(--primary);
+
+}
+/*==================================================
+                MY CV BUTTON
+==================================================*/
 
 .cv-btn{
 
@@ -274,23 +334,29 @@ p{
 
     align-items:center;
 
+    justify-content:center;
+
     gap:10px;
 
     padding:15px 28px;
+
+    min-width:150px;
+
+    border-radius:18px;
 
     background:#fff;
 
     color:var(--primary);
 
-    font-size:17px;
+    font-size:16px;
 
     font-weight:700;
 
-    border-radius:18px;
+    border:1px solid rgba(47,107,255,.08);
 
-    box-shadow:0 12px 30px rgba(255,0,170,.18);
+    box-shadow:0 12px 30px rgba(255,0,170,.15);
 
-    transition:.35s ease;
+    transition:all .35s ease;
 
     animation:cvPulse 2.5s infinite;
 
@@ -300,11 +366,21 @@ p{
 
     transform:translateY(-4px);
 
+    color:#fff;
+
+    background:linear-gradient(
+        135deg,
+        var(--primary),
+        #6ea8ff
+    );
+
+    box-shadow:0 18px 40px rgba(47,107,255,.30);
+
 }
 
 .cv-btn i{
 
-    font-size:20px;
+    font-size:18px;
 
 }
 
@@ -319,8 +395,8 @@ p{
     50%{
 
         box-shadow:
-        0 0 18px rgba(255,0,170,.28),
-        0 0 35px rgba(255,0,170,.12);
+        0 0 20px rgba(255,0,170,.25),
+        0 0 40px rgba(255,0,170,.12);
 
     }
 
@@ -331,49 +407,232 @@ p{
     }
 
 }
-/*=========================================
-        MOBILE RESPONSIVE
-=========================================*/
 
-@media (max-width: 768px) {
+/*==================================================
+                MOBILE MENU BUTTON
+==================================================*/
+
+.menu-btn{
+
+    width:52px;
+
+    height:52px;
+
+    display:none;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border-radius:16px;
+
+    background:#edf4ff;
+
+    color:var(--primary);
+
+    font-size:22px;
+
+    cursor:pointer;
+
+    transition:.35s ease;
+
+}
+
+.menu-btn:hover{
+
+    background:var(--primary);
+
+    color:#fff;
+
+    transform:scale(1.05);
+
+}
+/*==================================================
+                TABLET RESPONSIVE
+==================================================*/
+
+@media screen and (max-width:1200px){
+
+    .container{
+
+        width:94%;
+
+    }
 
     .header{
 
-        width:95%;
+        width:96%;
 
-        padding:15px 20px;
-
-        border-radius:20px;
-
-    }
-
-    .logo span{
-
-        font-size:30px;
-
-        line-height:1.1;
-
-    }
-
-    .logo-icon{
-
-        width:60px;
-
-        height:60px;
-
-        font-size:28px;
+        padding:0 28px;
 
     }
 
     .navbar{
 
-        display:none;
+        gap:26px;
+
+    }
+
+    .logo span{
+
+        font-size:28px;
+
+    }
+
+    .cv-btn{
+
+        padding:14px 22px;
+
+        font-size:15px;
+
+    }
+
+}
+
+/*==================================================
+                MOBILE RESPONSIVE
+==================================================*/
+
+@media screen and (max-width:768px){
+
+    .header{
+
+        width:95%;
+
+        height:78px;
+
+        padding:0 18px;
+
+        border-radius:20px;
+
+        top:14px;
+
+    }
+
+    .logo span{
+
+        font-size:22px;
+
+    }
+
+    .logo-icon{
+
+        width:48px;
+
+        height:48px;
+
+        font-size:20px;
+
+        border-radius:14px;
+
+    }
+
+    .menu-btn{
+
+        display:flex;
 
     }
 
     .cv-btn{
 
         display:none;
+
+    }
+        .navbar{
+
+    position:absolute;
+
+    top:95px;
+
+    left:0;
+
+    width:100%;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    gap:22px;
+
+    padding:30px;
+
+    background:rgba(255,255,255,.96);
+
+    backdrop-filter:blur(18px);
+
+    border-radius:22px;
+
+    border:1px solid rgba(47,107,255,.08);
+
+    box-shadow:0 25px 60px rgba(0,0,0,.12);
+
+    opacity:0;
+
+    visibility:hidden;
+
+    transform:translateY(-15px);
+
+    pointer-events:none;
+
+    transition:all .35s ease;
+
+}
+
+.navbar.active{
+
+    opacity:1;
+
+    visibility:visible;
+
+    transform:translateY(0);
+
+    pointer-events:auto;
+
+}
+
+.navbar a{
+
+    width:100%;
+
+    padding:14px 20px;
+
+    text-align:center;
+
+    font-size:18px;
+
+    border-radius:14px;
+
+    transition:.3s ease;
+
+}
+
+.navbar a:hover{
+
+    background:#edf4ff;
+
+    color:var(--primary);
+
+}
+
+}
+
+@keyframes menuFade{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(-20px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
 
     }
 

@@ -3,162 +3,414 @@
 
 <head>
 
+    <!-- =========================================
+                    META
+    ========================================== -->
+
     <meta charset="UTF-8">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
 
-    <title>Certificates | Sheyn Portfolio</title>
+    <meta
+        http-equiv="X-UA-Compatible"
+        content="IE=edge">
+
+    <meta
+        name="theme-color"
+        content="#2F6BFF">
+
+    <meta
+        name="description"
+        content="Professional certificates and technical achievements of Sheyn Jawwad Ibn Saif.">
+
+    <meta
+        name="keywords"
+        content="CCNA, Linux, Python, Certificates, Portfolio">
+
+    <meta
+        name="author"
+        content="Sheyn Jawwad Ibn Saif">
+
+    <title>
+
+        Certificates | Sheyn Portfolio
+
+    </title>
 
     <!-- Google Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
 
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
 
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
 
     <!-- Font Awesome -->
-    <link rel="stylesheet"
+
+    <link
+        rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
     <!-- CSS -->
+
     <link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/certificates.css">
 
 </head>
 
 <body>
 
-    <!--================ HEADER ================-->
+<header class="header">
 
-    <header class="header">
+    <div class="logo">
 
-        <div class="logo">
+        <a href="index.html">
 
-            <a href="index.html">
+            <div class="logo-icon">
 
-                <div class="logo-icon">SJ</div>
-
-                <span>Sheyn <strong>Portfolio</strong></span>
-
-            </a>
-
-        </div>
-
-        <nav class="navbar">
-
-            <a href="index.html">Home</a>
-
-            <a href="about.html">About</a>
-
-            <a href="skills.html">Skills</a>
-
-            <a href="projects.html">Projects</a>
-
-            <a href="certificates.html" class="active">Certificates</a>
-
-            <a href="contact.html">Contact</a>
-
-        </nav>
-
-        <a href="https://docs.google.com/document/d/YOUR_CV_LINK" target="_blank" class="cv-btn">
-
-            <i class="fa-regular fa-file-lines"></i>
-
-            My CV
-
-        </a>
-
-    </header>
-
-    <!--================ CERTIFICATES ================-->
-
-    <section class="certificates">
-
-        <div class="container">
-
-            <span class="section-tag">
-
-                My Certificates
-
-            </span>
-
-            <h2 class="certificates-title">
-
-                Certifications & Achievements
-
-            </h2>
-
-            <p class="certificates-description">
-
-                Professional certifications, online courses, and achievements that
-                support my networking and technical learning journey.
-
-            </p>
-
-            <div class="certificate-grid">
-
-                <!-- Certificate 1 -->
-
-                <div class="certificate-card">
-
-                    <img src="images/certificate1.jpg" alt="Certificate">
-
-                    <div class="certificate-content">
-
-                        <h3>CCNA (Coming Soon)</h3>
-
-                        <p>Cisco Networking Academy</p>
-
-                        <a href="#">View Certificate</a>
-
-                    </div>
-
-                </div>
-
-                <!-- Certificate 2 -->
-
-                <div class="certificate-card">
-
-                    <img src="images/certificate2.jpg" alt="Certificate">
-
-                    <div class="certificate-content">
-
-                        <h3>Linux Essentials (Coming Soon)</h3>
-
-                        <p>Linux Professional Institute</p>
-
-                        <a href="#">View Certificate</a>
-
-                    </div>
-
-                </div>
-
-                <!-- Certificate 3 -->
-
-                <div class="certificate-card">
-
-                    <img src="images/certificate3.jpg" alt="Certificate">
-
-                    <div class="certificate-content">
-
-                        <h3>Python Programming (Coming Soon)</h3>
-
-                        <p>Online Learning Platform</p>
-
-                        <a href="#">View Certificate</a>
-
-                    </div>
-
-                </div>
+                SJ
 
             </div>
 
+            <span>
+
+                Sheyn <strong>Portfolio</strong>
+
+            </span>
+
+        </a>
+
+    </div>
+
+        <!-- =========================================
+                MOBILE MENU
+    ========================================== -->
+
+    <button
+        class="menu-btn"
+        type="button"
+        aria-label="Toggle Navigation">
+
+        <i class="fa-solid fa-bars"></i>
+
+    </button>
+
+
+    <!-- =========================================
+                    NAVIGATION
+    ========================================== -->
+
+    <nav class="navbar">
+
+        <a href="index.html">Home</a>
+
+        <a href="about.html">About</a>
+
+        <a href="skills.html">Skills</a>
+
+        <a href="projects.html">Projects</a>
+
+        <a
+            href="certificates.html"
+            class="active">
+
+            Certificates
+
+        </a>
+
+        <a href="contact.html">
+
+            Contact
+
+        </a>
+
+    </nav>
+
+
+    <!-- CV BUTTON -->
+
+    <a
+        href="#"
+        class="cv-btn">
+
+        <i class="fa-regular fa-file-lines"></i>
+
+        My CV
+
+    </a>
+
+</header>
+
+<main>
+
+<section class="certificates">
+
+<div class="container">
+
+    <span class="section-tag">
+
+        My Certificates
+
+    </span>
+
+    <h2 class="certificates-title">
+
+        Certifications & Achievements
+
+    </h2>
+
+    <p class="certificates-description">
+
+        Professional certifications, online courses,
+        and technical achievements that support my
+        continuous learning journey.
+
+    </p>
+
+    <div class="certificate-grid">
+
+             <!-- =====================================
+                CERTIFICATE 01
+        ====================================== -->
+
+        <article class="certificate-card">
+
+            <div class="certificate-status progress">
+
+                In Progress
+
+            </div>
+
+            <div class="certificate-image">
+
+                <img
+                    src="images/certificate1.jpg"
+                    alt="Cisco CCNA Preparation"
+                    loading="lazy"
+                    decoding="async">
+
+            </div>
+
+            <div class="certificate-content">
+
+                <h3>
+
+                    Cisco CCNA
+
+                </h3>
+
+                <p class="certificate-org">
+
+                    <i class="fa-solid fa-building"></i>
+
+                    Cisco Networking Academy
+
+                </p>
+
+                <p class="certificate-date">
+
+                    <i class="fa-regular fa-calendar"></i>
+
+                    Expected: 2026
+
+                </p>
+
+                <a
+                    href="#"
+                    class="certificate-btn">
+
+                    <i class="fa-solid fa-eye"></i>
+
+                    View Details
+
+                </a>
+
+            </div>
+
+        </article>
+        
+                <!-- =====================================
+                CERTIFICATE 02
+        ====================================== -->
+
+        <article class="certificate-card">
+
+            <div class="certificate-status planned">
+
+                Planned
+
+            </div>
+
+            <div class="certificate-image">
+
+                <img
+                    src="images/certificate2.jpg"
+                    alt="Linux Essentials"
+                    loading="lazy"
+                    decoding="async">
+
+            </div>
+
+            <div class="certificate-content">
+
+                <h3>
+
+                    Linux Essentials
+
+                </h3>
+
+                <p class="certificate-org">
+
+                    <i class="fa-solid fa-building"></i>
+
+                    Linux Professional Institute
+
+                </p>
+
+                <p class="certificate-date">
+
+                    <i class="fa-regular fa-calendar"></i>
+
+                    Planned
+
+                </p>
+
+                <a
+                    href="#"
+                    class="certificate-btn">
+
+                    <i class="fa-solid fa-eye"></i>
+
+                    View Details
+
+                </a>
+
+            </div>
+
+        </article>
+
+                <!-- =====================================
+                CERTIFICATE 03
+        ====================================== -->
+
+        <article class="certificate-card">
+
+            <div class="certificate-status planned">
+
+                Planned
+
+            </div>
+
+            <div class="certificate-image">
+
+                <img
+                    src="images/certificate3.jpg"
+                    alt="Python Programming"
+
+                    loading="lazy"
+
+                    decoding="async">
+
+            </div>
+
+            <div class="certificate-content">
+
+                <h3>
+
+                    Python Programming
+
+                </h3>
+
+                <p class="certificate-org">
+
+                    <i class="fa-solid fa-building"></i>
+
+                    Online Learning Platform
+
+                </p>
+
+                <p class="certificate-date">
+
+                    <i class="fa-regular fa-calendar"></i>
+
+                    Planned
+
+                </p>
+
+                <a
+                    href="#"
+                    class="certificate-btn">
+
+                    <i class="fa-solid fa-eye"></i>
+
+                    View Details
+
+                </a>
+
+            </div>
+
+        </article>
+
+    </div>
+
+        <!-- =====================================
+            UPCOMING CERTIFICATIONS
+    ====================================== -->
+
+    <div class="upcoming-certificates">
+
+        <h3>
+
+            Learning Roadmap
+
+        </h3>
+
+        <div class="learning-tags">
+
+            <span>CCNA 200-301</span>
+
+            <span>CCNP</span>
+
+            <span>RHCSA</span>
+
+            <span>AWS Cloud Practitioner</span>
+
+            <span>Network Security</span>
+
+            <span>Python Automation</span>
+
         </div>
 
-    </section>
+    </div>
 
-    <script src="js/script.js"></script>
+</div>
+
+</section>
+
+</main>
+
+<!-- =========================================
+                FOOTER
+========================================== -->
+
+<!--
+    Footer will be added after
+    all pages are completed.
+-->
+
+<!-- =========================================
+                JAVASCRIPT
+========================================== -->
+
+<script src="js/script.js"></script>
 
 </body>
 

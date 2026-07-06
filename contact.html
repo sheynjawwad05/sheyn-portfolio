@@ -3,27 +3,65 @@
 
 <head>
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- =========================================
+                    META
+    ========================================== -->
 
-    <title>Contact | Sheyn Portfolio</title>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <meta
+        http-equiv="X-UA-Compatible"
+        content="IE=edge">
+
+    <meta
+        name="theme-color"
+        content="#2F6BFF">
+
+    <meta
+        name="description"
+        content="Get in touch with Sheyn Jawwad Ibn Saif for networking projects, internships, collaborations and career opportunities.">
+
+    <meta
+        name="keywords"
+        content="Contact, Portfolio, Network Engineer, CCNA">
+
+    <meta
+        name="author"
+        content="Sheyn Jawwad Ibn Saif">
+
+    <title>
+
+        Contact | Sheyn Portfolio
+
+    </title>
 
     <!-- Google Font -->
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
 
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
 
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
 
     <!-- Font Awesome -->
 
-    <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
     <!-- CSS -->
 
     <link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/contact.css">
 
 </head>
@@ -36,13 +74,38 @@
 
         <a href="index.html">
 
-            <div class="logo-icon">SJ</div>
+            <div class="logo-icon">
 
-            <span>Sheyn <strong>Portfolio</strong></span>
+                SJ
+
+            </div>
+
+            <span>
+
+                Sheyn <strong>Portfolio</strong>
+
+            </span>
 
         </a>
 
     </div>
+
+        <!-- =========================================
+                MOBILE MENU
+    ========================================== -->
+
+    <button
+        class="menu-btn"
+        type="button"
+        aria-label="Toggle Navigation">
+
+        <i class="fa-solid fa-bars"></i>
+
+    </button>
+
+    <!-- =========================================
+                NAVIGATION
+    ========================================== -->
 
     <nav class="navbar">
 
@@ -56,13 +119,19 @@
 
         <a href="certificates.html">Certificates</a>
 
-        <a href="contact.html" class="active">Contact</a>
+        <a
+            href="contact.html"
+            class="active">
+
+            Contact
+
+        </a>
 
     </nav>
 
-    <a href="https://docs.google.com/document/d/YOUR_CV_LINK"
-    target="_blank"
-    class="cv-btn">
+    <a
+        href="#"
+        class="cv-btn">
 
         <i class="fa-regular fa-file-lines"></i>
 
@@ -72,11 +141,15 @@
 
 </header>
 
+<main>
+
 <section class="contact">
 
-    <div class="container contact-container">
+<div class="container contact-container">
 
-        <!-- Left -->
+            <!-- =====================================
+                CONTACT INFORMATION
+        ====================================== -->
 
         <div class="contact-info">
 
@@ -94,10 +167,14 @@
 
             <p>
 
-                If you have any networking project, internship opportunity,
-                collaboration or job offer, feel free to contact me.
+                If you have a networking project,
+                internship opportunity, collaboration,
+                or job offer, feel free to contact me.
+                I would love to hear from you.
 
             </p>
+
+            <!-- Email -->
 
             <div class="contact-box">
 
@@ -107,11 +184,17 @@
 
                     <h4>Email</h4>
 
-                    <span>sheynjawwad646@gmail.com</span>
+                    <a href="mailto:sheynjawwad646@gmail.com">
+
+                        sheynjawwad646@gmail.com
+
+                    </a>
 
                 </div>
 
             </div>
+
+            <!-- Phone -->
 
             <div class="contact-box">
 
@@ -121,11 +204,17 @@
 
                     <h4>Phone</h4>
 
-                    <span>+8801847365172</span>
+                    <a href="tel:+8801847365172">
+
+                        +880 1847-365172
+
+                    </a>
 
                 </div>
 
             </div>
+
+            <!-- LinkedIn -->
 
             <div class="contact-box">
 
@@ -135,7 +224,13 @@
 
                     <h4>LinkedIn</h4>
 
-                    <span>sheyn-jawwad-293623315</span>
+                    <a href="https://www.linkedin.com/in/sheyn-jawwad-293623315"
+                       target="_blank"
+                       rel="noopener noreferrer">
+
+                        linkedin.com/in/sheyn-jawwad-293623315
+
+                    </a>
 
                 </div>
 
@@ -143,35 +238,44 @@
 
         </div>
 
-        <!-- Right -->
+                <!-- =====================================
+                CONTACT FORM
+        ====================================== -->
 
-        <form id="contact-form" class="contact-form">
+        <form
+            id="contact-form"
+            class="contact-form">
 
             <input
-type="text"
-name="from_name"
-placeholder="Your Name"
-required>
+                type="text"
+                name="from_name"
+                placeholder="Your Name"
+                autocomplete="name"
+                required>
 
-           <input
-type="email"
-name="from_email"
-placeholder="Your Email"
-required>
+            <input
+                type="email"
+                name="from_email"
+                placeholder="Your Email"
+                autocomplete="email"
+                required>
 
-        <input
-type="text"
-name="subject"
-placeholder="Subject"
-required>
+            <input
+                type="text"
+                name="subject"
+                placeholder="Subject"
+                autocomplete="off"
+                required>
 
-        <textarea
-name="message"
-rows="7"
-placeholder="Your Message"
-required></textarea>
+            <textarea
+                name="message"
+                rows="7"
+                placeholder="Your Message"
+                required></textarea>
 
             <button type="submit">
+
+                <i class="fa-solid fa-paper-plane"></i>
 
                 Send Message
 
@@ -183,9 +287,24 @@ required></textarea>
 
 </section>
 
+</main>
+<!-- =========================================
+                FOOTER
+========================================== -->
+
+<!--
+    Footer will be added after
+    completing all pages.
+-->
+
+<!-- =========================================
+                JAVASCRIPT
+========================================== -->
+
 <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 
 <script src="js/script.js"></script>
 
 </body>
+
 </html>

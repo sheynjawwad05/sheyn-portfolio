@@ -1,0 +1,92 @@
+/*==================================================
+                SCROLL TO TOP
+==================================================*/
+
+.scroll-top{
+
+    position:fixed;
+
+    right:28px;
+
+    bottom:28px;
+
+    width:56px;
+
+    height:56px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:linear-gradient(
+        135deg,
+        var(--primary),
+        #6ea8ff
+    );
+
+    color:#fff;
+
+    font-size:20px;
+
+    cursor:pointer;
+
+    box-shadow:0 18px 40px rgba(47,107,255,.28);
+
+    opacity:0;
+
+    visibility:hidden;
+
+    transform:translateY(20px);
+
+    transition:all .35s ease;
+
+    z-index:999;
+
+}
+
+.scroll-top.show{
+
+    opacity:1;
+
+    visibility:visible;
+
+    transform:translateY(0);
+
+}
+
+.scroll-top:hover{
+
+    transform:translateY(-6px) scale(1.08);
+
+    box-shadow:0 24px 50px rgba(47,107,255,.38);
+
+}
+
+/*==================================================
+                RESPONSIVE
+==================================================*/
+
+@media (max-width:768px){
+
+    .scroll-top{
+
+        width:50px;
+
+        height:50px;
+
+        right:18px;
+
+        bottom:18px;
+
+        font-size:18px;
+
+    }
+
+}
+

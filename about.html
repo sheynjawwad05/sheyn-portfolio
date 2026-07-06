@@ -3,155 +3,423 @@
 
 <head>
 
+    <!-- =========================================
+                    META
+    ========================================== -->
+
     <meta charset="UTF-8">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
 
-    <title>About | Sheyn Portfolio</title>
+    <meta
+        http-equiv="X-UA-Compatible"
+        content="IE=edge">
+
+    <meta
+        name="theme-color"
+        content="#2F6BFF">
+
+    <meta
+        name="description"
+        content="Learn more about Sheyn Jawwad Ibn Saif, Computer Science student and aspiring Network Engineer.">
+
+    <meta
+        name="keywords"
+        content="About Sheyn Jawwad, Portfolio, Network Engineer, CCNA">
+
+    <meta
+        name="author"
+        content="Sheyn Jawwad Ibn Saif">
+
+    <title>
+
+        About | Sheyn Portfolio
+
+    </title>
 
     <!-- Google Font -->
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
 
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
 
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
 
     <!-- Font Awesome -->
 
-    <link rel="stylesheet"
+    <link
+        rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
     <!-- CSS -->
 
     <link rel="stylesheet" href="css/style.css">
-
+<link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/about.css">
 
 </head>
 
 <body>
 
-    <!-- ================= HEADER ================= -->
+<!-- =========================================
+                HEADER
+========================================== -->
 
-    <header class="header">
+<header class="header">
 
-        <div class="logo">
+    <div class="logo">
 
-            <a href="index.html">
+        <a href="index.html">
 
-                <div class="logo-icon">SJ</div>
+            <div class="logo-icon">
 
-                <span>Sheyn <strong>Portfolio</strong></span>
-
-            </a>
-
-        </div>
-
-        <nav class="navbar">
-
-            <a href="index.html">Home</a>
-
-            <a href="about.html" class="active">About</a>
-
-            <a href="skills.html">Skills</a>
-
-            <a href="projects.html">Projects</a>
-
-            <a href="certificates.html">Certificates</a>
-
-            <a href="contact.html">Contact</a>
-
-        </nav>
-
-        <a href="https://docs.google.com/document/d/YOUR_CV_LINK" target="_blank" class="cv-btn">
-
-            <i class="fa-regular fa-file-lines"></i>
-
-            My CV
-
-        </a>
-
-    </header>
-
-    <!-- ================= ABOUT ================= -->
-
-    <section class="about">
-
-        <div class="container about-container">
-
-            <!-- Left -->
-
-            <div class="about-image">
-
-                <img src="images/profile.png" alt="Profile">
+                SJ
 
             </div>
 
-            <!-- Right -->
+            <span>
 
-            <div class="about-content">
+                Sheyn <strong>Portfolio</strong>
 
-                <span class="section-tag">
+            </span>
 
-                    About Me
+        </a>
 
-                </span>
+    </div>
 
-                <h2>
+        <!-- Mobile Menu -->
 
-                    Building My Career in Networking
+    <button
+        class="menu-btn"
+        type="button"
+        aria-label="Toggle Navigation">
 
-                </h2>
+        <i class="fa-solid fa-bars"></i>
 
-                <p>
+    </button>
 
-                    I am Sheyn Jawwad Ibn Saif, a Computer Science and Engineering student at Daffodil International University. I am passionate about networking, network security, cloud technologies, and building practical skills through real-world projects. My goal is to become a skilled Network Engineer by continuously learning and gaining hands-on experience.
 
-                </p>
+    <!-- Navigation -->
 
-                <div class="about-info">
+    <nav class="navbar">
 
-                    <div class="info-card">
+        <a href="index.html">
 
-                        <i class="fa-solid fa-user-graduate"></i>
+            Home
 
-                        <h4>Education</h4>
+        </a>
 
-                        <p>B.Sc. in CSE<br>Daffodil International University</p>
+        <a
+            href="about.html"
+            class="active">
 
-                    </div>
+            About
 
-                    <div class="info-card">
+        </a>
 
-                        <i class="fa-solid fa-network-wired"></i>
+        <a href="skills.html">
 
-                        <h4>Current Focus</h4>
+            Skills
 
-                        <p>CCNA, Network Security & Cloud</p>
+        </a>
 
-                    </div>
+        <a href="projects.html">
 
-                    <div class="info-card">
+            Projects
 
-                        <i class="fa-solid fa-bullseye"></i>
+        </a>
 
-                        <h4>Career Goal</h4>
+        <a href="certificates.html">
 
-                        <p>Professional Network Engineer</p>
+            Certificates
 
-                    </div>
+        </a>
+
+        <a href="contact.html">
+
+            Contact
+
+        </a>
+
+    </nav>
+
+
+    <!-- CV Button -->
+
+    <a
+        href="#"
+        class="cv-btn">
+
+        <i class="fa-regular fa-file-lines"></i>
+
+        My CV
+
+    </a>
+
+</header>
+
+
+<main>
+
+<section class="about">
+
+<div class="container about-container">
+
+            <!-- =====================================
+                    ABOUT IMAGE
+        ====================================== -->
+
+        <div class="about-image">
+
+            <img
+                src="images/profile.png"
+                alt="Portrait of Sheyn Jawwad Ibn Saif"
+                loading="lazy"
+                decoding="async">
+
+        </div>
+
+
+        <!-- =====================================
+                    ABOUT CONTENT
+        ====================================== -->
+
+        <div class="about-content">
+
+            <span class="section-tag">
+
+                About Me
+
+            </span>
+
+            <h2>
+
+                Building My Career in
+                <span>Networking</span>
+
+            </h2>
+
+            <p>
+
+                Hello! I'm <strong>Sheyn Jawwad Ibn Saif</strong>,
+                a Computer Science and Engineering student at
+                Daffodil International University. I am passionate
+                about networking, network security, cloud computing,
+                and modern IT infrastructure.
+
+            </p>
+
+            <p>
+
+                My goal is to become a professional Network Engineer
+                by continuously improving my practical knowledge
+                through real-world projects, certifications, and
+                hands-on lab practice.
+
+            </p>
+
+            <!-- =====================================
+                        ABOUT CARDS
+            ====================================== -->
+
+            <div class="about-info">
+
+                <div class="info-card">
+
+                    <i class="fa-solid fa-user-graduate"></i>
+
+                    <h4>
+
+                        Education
+
+                    </h4>
+
+                    <p>
+
+                        B.Sc. in Computer Science &
+                        Engineering
+
+                        <br>
+
+                        Daffodil International University
+
+                    </p>
+
+                </div>
+
+                <div class="info-card">
+
+                    <i class="fa-solid fa-network-wired"></i>
+
+                    <h4>
+
+                        Current Focus
+
+                    </h4>
+
+                    <p>
+
+                        CCNA, Linux,
+                        Network Security &
+                        Cloud Computing
+
+                    </p>
+
+                </div>
+
+                <div class="info-card">
+
+                    <i class="fa-solid fa-bullseye"></i>
+
+                    <h4>
+
+                        Career Goal
+
+                    </h4>
+
+                    <p>
+
+                        Become a Professional
+                        Network Engineer
+
+                    </p>
 
                 </div>
 
             </div>
 
+            <!-- =====================================
+                    QUICK STATS
+            ====================================== -->
+
+            <div class="about-stats">
+
+                <div class="stat-box">
+
+                    <h3>
+
+                        10+
+
+                    </h3>
+
+                    <span>
+
+                        Networking Labs
+
+                    </span>
+
+                </div>
+
+                <div class="stat-box">
+
+                    <h3>
+
+                        5+
+
+                    </h3>
+
+                    <span>
+
+                        Personal Projects
+
+                    </span>
+
+                </div>
+
+                <div class="stat-box">
+
+                    <h3>
+
+                        3+
+
+                    </h3>
+
+                    <span>
+
+                        Certifications
+
+                    </span>
+
+                </div>
+
+                <div class="stat-box">
+
+                    <h3>
+
+                        2023
+
+                    </h3>
+
+                    <span>
+
+                        Learning Journey
+
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <!-- =====================================
+                    ACTION BUTTONS
+            ====================================== -->
+
+            <div class="about-buttons">
+
+                <a href="#"
+
+                   class="hire-btn">
+
+                    <i class="fa-regular fa-file-lines"></i>
+
+                    Download CV
+
+                </a>
+
+                <a href="contact.html"
+
+                   class="contact-btn">
+
+                    <i class="fa-regular fa-envelope"></i>
+
+                    Contact Me
+
+                </a>
+
+            </div>
+
         </div>
 
-    </section>
+    </div>
 
-    <script src="js/script.js"></script>
+</section>
+
+</main>
+
+
+<!-- =========================================
+                FOOTER
+========================================== -->
+
+<!--
+    Footer will be added after
+    completing all pages.
+-->
+
+
+<!-- =========================================
+                JAVASCRIPT
+========================================== -->
+
+<script src="js/script.js"></script>
 
 </body>
 

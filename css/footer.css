@@ -1,0 +1,375 @@
+/*==================================================
+                    FOOTER
+==================================================*/
+
+.footer{
+
+    margin-top:100px;
+
+    background:#132238;
+
+    color:#fff;
+
+    padding:70px 0 25px;
+
+    border-top:4px solid var(--primary);
+
+}
+
+.footer-container{
+
+    display:grid;
+
+    grid-template-columns:2fr 1fr 1.3fr 1fr;
+
+    gap:50px;
+
+    align-items:start;
+
+}
+
+
+/*==================================================
+                FOOTER LOGO
+==================================================*/
+
+.footer-logo{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:16px;
+
+    margin-bottom:24px;
+
+}
+
+.footer-logo h3{
+
+    font-size:28px;
+
+    font-weight:700;
+
+    color:#fff;
+
+}
+
+.footer-about p{
+
+    color:rgba(255,255,255,.75);
+
+    line-height:1.9;
+
+    text-align:left;
+
+}
+
+
+/*==================================================
+                FOOTER TITLE
+==================================================*/
+
+.footer h4{
+
+    font-size:20px;
+
+    font-weight:600;
+
+    margin-bottom:22px;
+
+    color:#fff;
+
+}
+
+/*==================================================
+                QUICK LINKS
+==================================================*/
+
+.footer-links ul{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:14px;
+
+}
+
+.footer-links a{
+
+    color:rgba(255,255,255,.75);
+
+    transition:all .3s ease;
+
+}
+
+.footer-links a:hover{
+
+    color:#fff;
+
+    padding-left:8px;
+
+}
+
+
+/*==================================================
+                CONTACT
+==================================================*/
+
+.footer-contact p{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    margin-bottom:18px;
+
+    color:rgba(255,255,255,.75);
+
+}
+
+.footer-contact i{
+
+    color:var(--primary);
+
+}
+
+.footer-contact a{
+
+    color:rgba(255,255,255,.75);
+
+    transition:.3s;
+
+}
+
+.footer-contact a:hover{
+
+    color:#fff;
+
+}
+
+/*==================================================
+                SOCIAL ICONS
+==================================================*/
+
+.footer-icons{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:16px;
+
+}
+
+.footer-icons a{
+
+    width:48px;
+
+    height:48px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.08);
+
+    color:#fff;
+
+    font-size:18px;
+
+    transition:all .35s ease;
+
+}
+
+.footer-icons a:hover{
+
+    transform:translateY(-6px) scale(1.08);
+
+}
+
+
+/* Facebook */
+
+.footer-icons a:nth-child(1):hover{
+
+    background:#1877F2;
+
+    box-shadow:0 0 20px rgba(24,119,242,.45);
+
+}
+
+
+/* GitHub */
+
+.footer-icons a:nth-child(2):hover{
+
+    background:#24292F;
+
+    box-shadow:0 0 20px rgba(36,41,47,.45);
+
+}
+
+
+/* LinkedIn */
+
+.footer-icons a:nth-child(3):hover{
+
+    background:#0A66C2;
+
+    box-shadow:0 0 20px rgba(10,102,194,.45);
+
+}
+
+
+/* Email */
+
+.footer-icons a:nth-child(4):hover{
+
+    background:#EA4335;
+
+    box-shadow:0 0 20px rgba(234,67,53,.45);
+
+}
+
+/*==================================================
+                FOOTER BOTTOM
+==================================================*/
+
+.footer-bottom{
+
+    margin-top:60px;
+
+    padding-top:24px;
+
+    border-top:1px solid rgba(255,255,255,.10);
+
+    text-align:center;
+
+}
+
+.footer-bottom p{
+
+    color:rgba(255,255,255,.70);
+
+    text-align:center;
+
+    font-size:15px;
+
+}
+
+/*==================================================
+                RESPONSIVE
+==================================================*/
+
+@media (max-width:1200px){
+
+    .footer-container{
+
+        grid-template-columns:repeat(2,1fr);
+
+        gap:40px;
+
+    }
+
+}
+
+
+@media (max-width:768px){
+
+    .footer{
+
+        padding:60px 0 20px;
+
+    }
+
+    .footer-container{
+
+        grid-template-columns:1fr;
+
+        text-align:center;
+
+        gap:35px;
+
+    }
+
+    .footer-logo{
+
+        justify-content:center;
+
+    }
+
+    .footer-about p{
+
+        text-align:center;
+
+    }
+
+    .footer-links ul{
+
+        align-items:center;
+
+    }
+
+    .footer-contact p{
+
+        justify-content:center;
+
+    }
+
+    .footer-icons{
+
+        justify-content:center;
+
+    }
+
+}
+
+
+@media (max-width:480px){
+
+    .footer-logo h3{
+
+        font-size:24px;
+
+    }
+
+    .footer h4{
+
+        font-size:18px;
+
+    }
+
+    .footer-icons{
+
+        gap:12px;
+
+    }
+
+    .footer-icons a{
+
+        width:44px;
+
+        height:44px;
+
+        font-size:16px;
+
+    }
+
+    .footer-bottom p{
+
+        font-size:14px;
+
+    }
+
+}
+
+
+

@@ -3,268 +3,436 @@
 
 <head>
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- =========================================
+                    META
+    ========================================== -->
 
-    <title>Projects | Sheyn Portfolio</title>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <meta
+        http-equiv="X-UA-Compatible"
+        content="IE=edge">
+
+    <meta
+        name="theme-color"
+        content="#2F6BFF">
+
+    <meta
+        name="description"
+        content="Explore networking, Linux, and web development projects by Sheyn Jawwad Ibn Saif.">
+
+    <meta
+        name="keywords"
+        content="Portfolio, Networking Projects, Cisco, Linux, Packet Tracer, Web Development">
+
+    <meta
+        name="author"
+        content="Sheyn Jawwad Ibn Saif">
+
+    <title>
+
+        Projects | Sheyn Portfolio
+
+    </title>
 
     <!-- Google Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
 
     <!-- Font Awesome -->
-    <link rel="stylesheet"
+
+    <link
+        rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
     <!-- CSS -->
+
     <link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/projects.css">
 
 </head>
 
 <body>
 
-    <!--================ HEADER ================-->
+<header class="header">
 
-    <header class="header">
+    <div class="logo">
 
-        <div class="logo">
+        <a href="index.html">
 
-            <a href="index.html">
+            <div class="logo-icon">
 
-                <div class="logo-icon">SJ</div>
+                SJ
 
-                <span>Sheyn <strong>Portfolio</strong></span>
+            </div>
 
-            </a>
+            <span>
 
-        </div>
-
-        <nav class="navbar">
-
-            <a href="index.html">Home</a>
-
-            <a href="about.html">About</a>
-
-            <a href="skills.html">Skills</a>
-
-            <a href="projects.html" class="active">Projects</a>
-
-            <a href="certificates.html">Certificates</a>
-
-            <a href="contact.html">Contact</a>
-
-        </nav>
-
-        <a href="https://docs.google.com/document/d/YOUR_CV_LINK" target="_blank" class="cv-btn">
-
-            <i class="fa-regular fa-file-lines"></i>
-
-            My CV
-
-        </a>
-
-    </header>
-
-    <!--================ PROJECTS ================-->
-
-    <section class="projects">
-
-        <div class="container">
-
-            <span class="section-tag">
-
-                My Projects
+                Sheyn <strong>Portfolio</strong>
 
             </span>
 
-            <h2 class="projects-title">
-
-                Featured Networking Projects
-
-            </h2>
-
-            <p class="projects-description">
-
-                These projects represent my practical learning journey in networking,
-                system administration, Linux, and software development.
-
-            </p>
-
-            <div class="projects-grid">
-
-                <!-- Project 1 -->
-
-<div class="project-card">
-
-    <div class="project-image">
-
-        <img src="images/project1.jpg" alt="Enterprise Network Design">
+        </a>
 
     </div>
 
-    <div class="project-content">
+        <!-- =========================================
+                MOBILE MENU
+    ========================================== -->
 
-        <h3>Enterprise Network Design</h3>
+    <button
+        class="menu-btn"
+        type="button"
+        aria-label="Toggle Navigation">
 
-        <div class="project-tags">
+        <i class="fa-solid fa-bars"></i>
 
-            <span>Cisco</span>
+    </button>
 
-            <span>Packet Tracer</span>
+    <!-- =========================================
+                    NAVIGATION
+    ========================================== -->
 
-            <span>VLAN</span>
+    <nav class="navbar">
 
-            <span>DHCP</span>
+        <a href="index.html">Home</a>
 
-        </div>
+        <a href="about.html">About</a>
 
-        <p>
+        <a href="skills.html">Skills</a>
 
-            Designed a complete enterprise network using Cisco Packet Tracer with VLANs, DHCP, ACLs, routing, and switching concepts.
+        <a
+            href="projects.html"
+            class="active">
 
-        </p>
+            Projects
 
-        <div class="project-buttons">
+        </a>
 
-            <a href="https://github.com/" target="_blank">
+        <a href="certificates.html">
 
-                <i class="fa-brands fa-github"></i>
+            Certificates
 
-                GitHub
+        </a>
 
-            </a>
+        <a href="contact.html">
 
-            <a href="#">
+            Contact
 
-                <i class="fa-solid fa-circle-info"></i>
+        </a>
 
-                Details
+    </nav>
 
-            </a>
+    <!-- CV BUTTON -->
 
-        </div>
+    <a
+        href="#"
+        class="cv-btn">
+
+        <i class="fa-regular fa-file-lines"></i>
+
+        My CV
+
+    </a>
+
+</header>
+
+<main>
+
+<section class="projects">
+
+<div class="container">
+
+    <span class="section-tag">
+
+        My Projects
+
+    </span>
+
+    <h2 class="projects-title">
+
+        Featured Networking Projects
+
+    </h2>
+
+    <p class="projects-description">
+
+        A collection of networking, Linux and web development
+        projects built through practical learning,
+        university coursework and self-study.
+
+    </p>
+
+    <div class="projects-grid">
+
+                <!-- =====================================
+                PROJECT 01
+        ====================================== -->
+
+        <article class="project-card">
+
+            <div class="project-status completed">
+
+                Completed
+
+            </div>
+
+            <div class="project-image">
+
+                <img
+                    src="images/project1.jpg"
+                    alt="Enterprise Network Design"
+                    loading="lazy"
+                    decoding="async">
+
+            </div>
+
+            <div class="project-content">
+
+                <h3>
+
+                    Enterprise Network Design
+
+                </h3>
+
+                <div class="project-tags">
+
+                    <span>Cisco</span>
+
+                    <span>Packet Tracer</span>
+
+                    <span>VLAN</span>
+
+                    <span>DHCP</span>
+
+                </div>
+
+                <p>
+
+                    Designed an enterprise network using Cisco
+                    Packet Tracer with VLANs, DHCP,
+                    routing, switching and ACL implementation.
+
+                </p>
+
+                <div class="project-buttons">
+
+                    <a
+                        href="https://github.com/sheynjawwad05"
+                        target="_blank"
+                        rel="noopener noreferrer">
+
+                        <i class="fa-brands fa-github"></i>
+
+                        GitHub
+
+                    </a>
+
+                    <a href="#">
+
+                        <i class="fa-solid fa-laptop-code"></i>
+
+                        Live Demo
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </article>
+
+                <!-- =====================================
+                PROJECT 02
+        ====================================== -->
+
+        <article class="project-card">
+
+            <div class="project-status completed">
+
+                Completed
+
+            </div>
+
+            <div class="project-image">
+
+                <img
+                    src="images/project2.jpg"
+                    alt="Linux Server Lab"
+                    loading="lazy"
+                    decoding="async">
+
+            </div>
+
+            <div class="project-content">
+
+                <h3>
+
+                    Linux Server Lab
+
+                </h3>
+
+                <div class="project-tags">
+
+                    <span>Linux</span>
+
+                    <span>Ubuntu</span>
+
+                    <span>SSH</span>
+
+                    <span>VirtualBox</span>
+
+                </div>
+
+                <p>
+
+                    Configured Ubuntu virtual machines,
+                    managed users, file permissions,
+                    SSH services and basic network
+                    administration in a virtual lab.
+
+                </p>
+
+                <div class="project-buttons">
+
+                    <a
+                        href="https://github.com/sheynjawwad05"
+                        target="_blank"
+                        rel="noopener noreferrer">
+
+                        <i class="fa-brands fa-github"></i>
+
+                        GitHub
+
+                    </a>
+
+                    <a href="#">
+
+                        <i class="fa-solid fa-laptop-code"></i>
+
+                        Live Demo
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </article>
+
+                <!-- =====================================
+                PROJECT 03
+        ====================================== -->
+
+        <article class="project-card">
+
+            <div class="project-status completed">
+
+                Completed
+
+            </div>
+
+            <div class="project-image">
+
+                <img
+                    src="images/project3.jpg"
+                    alt="Personal Portfolio Website"
+                    loading="lazy"
+                    decoding="async">
+
+            </div>
+
+            <div class="project-content">
+
+                <h3>
+
+                    Personal Portfolio Website
+
+                </h3>
+
+                <div class="project-tags">
+
+                    <span>HTML5</span>
+
+                    <span>CSS3</span>
+
+                    <span>JavaScript</span>
+
+                    <span>Responsive</span>
+
+                </div>
+
+                <p>
+
+                    Designed and developed a fully
+                    responsive personal portfolio
+                    website with modern UI,
+                    animations and EmailJS integration.
+
+                </p>
+
+                <div class="project-buttons">
+
+                    <a
+                        href="https://github.com/sheynjawwad05"
+                        target="_blank"
+                        rel="noopener noreferrer">
+
+                        <i class="fa-brands fa-github"></i>
+
+                        GitHub
+
+                    </a>
+
+                    <a
+                        href="index.html">
+
+                        <i class="fa-solid fa-globe"></i>
+
+                        Live Demo
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </article>
 
     </div>
 
-</div>
+</section>
 
-                <!-- Project 2 -->
+</main>
 
-<div class="project-card">
+<!-- =========================================
+                FOOTER
+========================================== -->
 
-    <div class="project-image">
+<!--
+    Footer will be added after
+    completing all pages.
+-->
 
-        <img src="images/project2.jpg" alt="Linux Server Lab">
+<!-- =========================================
+                JAVASCRIPT
+========================================== -->
 
-    </div>
-
-    <div class="project-content">
-
-        <h3>Linux Server Lab</h3>
-
-        <div class="project-tags">
-
-            <span>Linux</span>
-
-            <span>Ubuntu</span>
-
-            <span>SSH</span>
-
-            <span>VirtualBox</span>
-
-        </div>
-
-        <p>
-
-            Configured Linux users, permissions, SSH, networking, and server management using Ubuntu virtual machines.
-
-        </p>
-
-        <div class="project-buttons">
-
-            <a href="https://github.com/" target="_blank">
-
-                <i class="fa-brands fa-github"></i>
-
-                GitHub
-
-            </a>
-
-            <a href="#">
-
-                <i class="fa-solid fa-circle-info"></i>
-
-                Details
-
-            </a>
-
-        </div>
-
-    </div>
-
-</div>
-
-                <!-- Project 3 -->
-
- <div class="project-card">
-
-    <div class="project-image">
-
-        <img src="images/project3.jpg" alt="Portfolio Website">
-
-    </div>
-
-    <div class="project-content">
-
-        <h3>Personal Portfolio Website</h3>
-
-        <div class="project-tags">
-
-            <span>HTML</span>
-
-            <span>CSS</span>
-
-            <span>JavaScript</span>
-
-        </div>
-
-        <p>
-
-            Designed and developed a responsive personal portfolio website with a modern UI, animations, and a professional layout.
-
-        </p>
-
-        <div class="project-buttons">
-
-            <a href="https://github.com/" target="_blank">
-
-                <i class="fa-brands fa-github"></i>
-
-                GitHub
-
-            </a>
-
-            <a href="#">
-
-                <i class="fa-solid fa-circle-info"></i>
-
-                Details
-
-            </a>
-
-        </div>
-
-    </div>
-
-</div>
-
-    </section>
-
-    <script src="js/script.js"></script>
+<script src="js/script.js"></script>
 
 </body>
 
