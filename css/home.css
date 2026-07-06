@@ -865,18 +865,19 @@
 
     }
 
-    .home-image {
+.home-image {
 
-        margin-top: -60px;
+    margin-top: 20px;
 
-    }
+    margin-bottom: 20px;
 
-    .home-image img {
+}
 
-        width: 300px;
+.home-image img {
 
-    }
+    width: 300px;
 
+}
     .home-image::before {
 
         width: 330px;
