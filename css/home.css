@@ -805,7 +805,7 @@
 
     .home {
 
-        padding: 120px 20px 60px;
+        padding: 90px 20px 60px;
 
     }
 
@@ -1000,9 +1000,11 @@
 
     .home-image {
 
-        margin-top: -80px;
+    margin-top: 20px;
 
-    }
+    margin-bottom: 20px;
+
+}
 
     .home-image img {
 
