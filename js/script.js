@@ -1,6 +1,6 @@
 /*==================================================
                 PORTFOLIO SCRIPT
-                Version 2.1
+                Version 2.2
 ==================================================*/
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -80,6 +80,32 @@ document.addEventListener("DOMContentLoaded", () => {
             }
 
         });
+
+    }
+
+    /*==========================================
+                MOBILE HERO LAYOUT
+    ==========================================*/
+
+    if (window.innerWidth <= 768) {
+
+        const homeContainer =
+            document.querySelector(".home-container");
+
+        const homeContent =
+            document.querySelector(".home-content");
+
+        const homeImage =
+            document.querySelector(".home-image");
+
+        if (homeContainer && homeContent && homeImage) {
+
+            homeContainer.insertBefore(
+                homeImage,
+                homeContent
+            );
+
+        }
 
     }
 

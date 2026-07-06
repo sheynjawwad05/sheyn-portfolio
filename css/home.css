@@ -809,17 +809,19 @@
 
     }
 
-    .home-container {
+    .home-container{
 
-        display: flex;
+    display:flex;
 
-        flex-direction: column-reverse;
+    flex-direction:column;
 
-        gap: 10px;
+    align-items:center;
 
-        text-align: center;
+    gap:20px;
 
-    }
+    text-align:center;
+
+}
 
     .home-content {
 
