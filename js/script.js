@@ -64,3 +64,24 @@ if(contactForm){
     });
 
 }
+
+/*==============================
+        MOBILE MENU
+==============================*/
+
+const menuBtn = document.querySelector(".menu-btn");
+const navbar = document.querySelector(".navbar");
+
+if(menuBtn && navbar){
+
+    menuBtn.addEventListener("click", () => {
+
+        navbar.classList.toggle("active");
+
+        menuBtn.innerHTML = navbar.classList.contains("active")
+            ? '<i class="fa-solid fa-xmark"></i>'
+            : '<i class="fa-solid fa-bars"></i>';
+
+    });
+
+}
