@@ -1,6 +1,6 @@
 /*==================================================
                 PORTFOLIO SCRIPT
-                Version 2.0
+                Version 2.1
 ==================================================*/
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -9,76 +9,50 @@ document.addEventListener("DOMContentLoaded", () => {
                 TYPING ANIMATION
     ==========================================*/
 
-    if (document.querySelector("#typing")) {
+    const typingElement = document.querySelector("#typing");
+
+    if (typingElement) {
 
         new Typed("#typing", {
+
             strings: [
                 "Network Engineer",
                 "CCNA Learner",
                 "Networking Enthusiast"
             ],
+
             typeSpeed: 70,
             backSpeed: 45,
             backDelay: 1800,
             loop: true
+
         });
 
     }
 
-/*==============================
-        MOBILE MENU
-==============================*/
+    /*==========================================
+                MOBILE MENU
+    ==========================================*/
 
-const menuBtn = document.querySelector(".menu-btn");
-const navbar = document.querySelector(".navbar");
-const navLinks = document.querySelectorAll(".navbar a");
+    const menuBtn = document.querySelector(".menu-btn");
+    const navbar = document.querySelector(".navbar");
+    const navLinks = document.querySelectorAll(".navbar a");
 
-if (menuBtn && navbar) {
+    if (menuBtn && navbar) {
 
-    menuBtn.addEventListener("click", () => {
+        menuBtn.addEventListener("click", (e) => {
 
-        navbar.classList.toggle("active");
+            e.stopPropagation();
 
-        menuBtn.innerHTML = navbar.classList.contains("active")
-            ? '<i class="fa-solid fa-xmark"></i>'
-            : '<i class="fa-solid fa-bars"></i>';
+            navbar.classList.toggle("active");
 
-    });
-
-    // Close menu after clicking a link
-    navLinks.forEach(link => {
-
-        link.addEventListener("click", () => {
-
-            navbar.classList.remove("active");
-
-            menuBtn.innerHTML =
-                '<i class="fa-solid fa-bars"></i>';
+            menuBtn.innerHTML = navbar.classList.contains("active")
+                ? '<i class="fa-solid fa-xmark"></i>'
+                : '<i class="fa-solid fa-bars"></i>';
 
         });
 
-    });
-
-    // Close menu when clicking outside
-    document.addEventListener("click", (e) => {
-
-        if (
-            !navbar.contains(e.target) &&
-            !menuBtn.contains(e.target)
-        ) {
-
-            navbar.classList.remove("active");
-
-            menuBtn.innerHTML =
-                '<i class="fa-solid fa-bars"></i>';
-
-        }
-
-    });
-
-}
-
-        document.querySelectorAll(".navbar a").forEach(link => {
+        navLinks.forEach(link => {
 
             link.addEventListener("click", () => {
 
@@ -162,7 +136,7 @@ if (menuBtn && navbar) {
 
                 .then(() => {
 
-                    alert("✅ Message sent successfully!");
+                    alert("✅ Message Sent Successfully!");
 
                     contactForm.reset();
 
@@ -182,40 +156,41 @@ if (menuBtn && navbar) {
 
     }
 
-});
+    /*==========================================
+                SCROLL TO TOP
+    ==========================================*/
 
-/*==============================
-        SCROLL TO TOP
-==============================*/
+    const scrollTopBtn =
+        document.querySelector(".scroll-top");
 
-const scrollTopBtn = document.querySelector(".scroll-top");
+    if (scrollTopBtn) {
 
-if(scrollTopBtn){
+        window.addEventListener("scroll", () => {
 
-    window.addEventListener("scroll",()=>{
+            if (window.scrollY > 250) {
 
-        if(window.scrollY > 250){
+                scrollTopBtn.classList.add("show");
 
-            scrollTopBtn.classList.add("show");
+            } else {
 
-        }else{
+                scrollTopBtn.classList.remove("show");
 
-            scrollTopBtn.classList.remove("show");
-
-        }
-
-    });
-
-    scrollTopBtn.addEventListener("click",()=>{
-
-        window.scrollTo({
-
-            top:0,
-
-            behavior:"smooth"
+            }
 
         });
 
-    });
+        scrollTopBtn.addEventListener("click", () => {
 
-}
+            window.scrollTo({
+
+                top: 0,
+
+                behavior: "smooth"
+
+            });
+
+        });
+
+    }
+
+});
