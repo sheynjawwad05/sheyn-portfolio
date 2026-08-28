@@ -1,11 +1,14 @@
 /*==================================================
                 GOOGLE FONT
 ==================================================*/
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
 
 /*==================================================
                     RESET
 ==================================================*/
+
 *{
     margin:0;
     padding:0;
@@ -48,6 +51,8 @@ button{
     cursor:pointer;
     font-family:'Poppins',sans-serif;
 }
+
+
 /*==================================================
                 ROOT VARIABLES
 ==================================================*/
@@ -74,6 +79,7 @@ button{
     --transition:.35s ease;
 
 }
+
 
 /*==================================================
                 GLOBAL STYLES
@@ -127,6 +133,8 @@ h6{
     color:#fff;
 
 }
+
+
 /*==================================================
                     HEADER
 ==================================================*/
@@ -181,11 +189,13 @@ h6{
 
 }
 
-.header>*{
+.header > *{
 
     flex-shrink:0;
 
 }
+
+
 /*==================================================
                     LOGO
 ==================================================*/
@@ -255,6 +265,8 @@ h6{
     color:var(--primary);
 
 }
+
+
 /*==================================================
                     NAVBAR
 ==================================================*/
@@ -312,7 +324,6 @@ h6{
 }
 
 .navbar a:hover::after,
-
 .navbar a.active::after{
 
     width:100%;
@@ -324,6 +335,8 @@ h6{
     color:var(--primary);
 
 }
+
+
 /*==================================================
                 MY CV BUTTON
 ==================================================*/
@@ -354,7 +367,7 @@ h6{
 
     border:1px solid rgba(47,107,255,.08);
 
-    box-shadow:0 12px 30px rgba(255,0,170,.15);
+    box-shadow:0 12px 30px rgba(47,107,255,.12);
 
     transition:all .35s ease;
 
@@ -388,25 +401,26 @@ h6{
 
     0%{
 
-        box-shadow:0 0 0 rgba(255,0,170,.15);
+        box-shadow:0 0 0 rgba(47,107,255,.10);
 
     }
 
     50%{
 
         box-shadow:
-        0 0 20px rgba(255,0,170,.25),
-        0 0 40px rgba(255,0,170,.12);
+        0 0 20px rgba(47,107,255,.18),
+        0 0 40px rgba(47,107,255,.08);
 
     }
 
     100%{
 
-        box-shadow:0 0 0 rgba(255,0,170,0);
+        box-shadow:0 0 0 rgba(47,107,255,0);
 
     }
 
 }
+
 
 /*==================================================
                 MOBILE MENU BUTTON
@@ -447,6 +461,8 @@ h6{
     transform:scale(1.05);
 
 }
+
+
 /*==================================================
                 TABLET RESPONSIVE
 ==================================================*/
@@ -489,6 +505,7 @@ h6{
 
 }
 
+
 /*==================================================
                 MOBILE RESPONSIVE
 ==================================================*/
@@ -501,122 +518,268 @@ h6{
 
         height:78px;
 
-        padding:0 18px;
+        padding:0 14px;
 
         border-radius:20px;
 
         top:14px;
 
+        gap:10px;
+
+    }
+
+    /* Logo */
+
+    .logo{
+
+        flex:1;
+
+        min-width:0;
+
+    }
+
+    .logo a{
+
+        gap:10px;
+
     }
 
     .logo span{
 
-        font-size:22px;
+        font-size:19px;
+
+        overflow:hidden;
+
+        text-overflow:ellipsis;
 
     }
 
     .logo-icon{
 
-        width:48px;
+        width:46px;
 
-        height:48px;
+        height:46px;
 
-        font-size:20px;
+        min-width:46px;
+
+        font-size:19px;
 
         border-radius:14px;
 
     }
 
+
+    /* CV Button */
+
+    .cv-btn{
+
+        display:flex;
+
+        min-width:auto;
+
+        width:auto;
+
+        padding:10px 13px;
+
+        gap:6px;
+
+        border-radius:13px;
+
+        font-size:13px;
+
+        white-space:nowrap;
+
+        animation:none;
+
+    }
+
+    .cv-btn i{
+
+        font-size:14px;
+
+    }
+
+
+    /* Menu Button */
+
     .menu-btn{
 
         display:flex;
+
+        width:46px;
+
+        height:46px;
+
+        min-width:46px;
+
+        border-radius:14px;
+
+        font-size:20px;
+
+    }
+
+
+    /* Mobile Navbar */
+
+    .navbar{
+
+        position:absolute;
+
+        top:95px;
+
+        left:0;
+
+        width:100%;
+
+        display:flex;
+
+        flex-direction:column;
+
+        align-items:center;
+
+        gap:22px;
+
+        padding:30px;
+
+        background:rgba(255,255,255,.96);
+
+        backdrop-filter:blur(18px);
+
+        -webkit-backdrop-filter:blur(18px);
+
+        border-radius:22px;
+
+        border:1px solid rgba(47,107,255,.08);
+
+        box-shadow:0 25px 60px rgba(0,0,0,.12);
+
+        opacity:0;
+
+        visibility:hidden;
+
+        transform:translateY(-15px);
+
+        pointer-events:none;
+
+        transition:all .35s ease;
+
+    }
+
+    .navbar.active{
+
+        opacity:1;
+
+        visibility:visible;
+
+        transform:translateY(0);
+
+        pointer-events:auto;
+
+    }
+
+    .navbar a{
+
+        width:100%;
+
+        padding:14px 20px;
+
+        text-align:center;
+
+        font-size:18px;
+
+        border-radius:14px;
+
+        transition:.3s ease;
+
+    }
+
+    .navbar a:hover{
+
+        background:#edf4ff;
+
+        color:var(--primary);
+
+    }
+
+}
+
+
+/*==================================================
+                SMALL MOBILE
+==================================================*/
+
+@media screen and (max-width:400px){
+
+    .header{
+
+        padding:0 10px;
+
+        gap:7px;
+
+    }
+
+    .logo a{
+
+        gap:7px;
+
+    }
+
+    .logo span{
+
+        font-size:16px;
+
+    }
+
+    .logo-icon{
+
+        width:42px;
+
+        height:42px;
+
+        min-width:42px;
+
+        font-size:17px;
+
+        border-radius:12px;
 
     }
 
     .cv-btn{
 
-        display:none;
+        padding:9px 10px;
+
+        font-size:12px;
+
+        gap:5px;
 
     }
-        .navbar{
 
-    position:absolute;
+    .cv-btn i{
 
-    top:95px;
+        font-size:13px;
 
-    left:0;
+    }
 
-    width:100%;
+    .menu-btn{
 
-    display:flex;
+        width:42px;
 
-    flex-direction:column;
+        height:42px;
 
-    align-items:center;
+        min-width:42px;
 
-    gap:22px;
+        font-size:18px;
 
-    padding:30px;
+        border-radius:12px;
 
-    background:rgba(255,255,255,.96);
-
-    backdrop-filter:blur(18px);
-
-    border-radius:22px;
-
-    border:1px solid rgba(47,107,255,.08);
-
-    box-shadow:0 25px 60px rgba(0,0,0,.12);
-
-    opacity:0;
-
-    visibility:hidden;
-
-    transform:translateY(-15px);
-
-    pointer-events:none;
-
-    transition:all .35s ease;
+    }
 
 }
 
-.navbar.active{
 
-    opacity:1;
-
-    visibility:visible;
-
-    transform:translateY(0);
-
-    pointer-events:auto;
-
-}
-
-.navbar a{
-
-    width:100%;
-
-    padding:14px 20px;
-
-    text-align:center;
-
-    font-size:18px;
-
-    border-radius:14px;
-
-    transition:.3s ease;
-
-}
-
-.navbar a:hover{
-
-    background:#edf4ff;
-
-    color:var(--primary);
-
-}
-
-}
+/*==================================================
+                MENU ANIMATION
+==================================================*/
 
 @keyframes menuFade{
 

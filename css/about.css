@@ -820,3 +820,16 @@
 
 }
 
+/*=========================================
+        ABOUT CARD TEXT FIX
+=========================================*/
+
+.info-card p{
+
+    text-align:left;
+
+    word-spacing:normal;
+
+    letter-spacing:normal;
+
+}
