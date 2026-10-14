@@ -6,13 +6,19 @@
 
     margin-top:100px;
 
-    background:#132238;
+    background:rgba(5,5,18,0.75);
+
+    backdrop-filter:blur(30px) saturate(200%);
+
+    -webkit-backdrop-filter:blur(30px) saturate(200%);
 
     color:#fff;
 
     padding:70px 0 25px;
 
-    border-top:4px solid var(--primary);
+    border-top:1px solid rgba(120,80,255,0.35);
+
+    box-shadow:0 -10px 40px rgba(120,80,255,0.12);
 
 }
 

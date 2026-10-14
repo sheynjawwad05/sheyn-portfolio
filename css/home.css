@@ -48,7 +48,7 @@
 
     background:
         radial-gradient(circle,
-            rgba(47, 107, 255, .10),
+            rgba(120, 80, 255, .22),
             transparent 72%);
 
     z-index: -3;
@@ -74,7 +74,7 @@
 
     background:
         radial-gradient(circle,
-            rgba(47, 107, 255, .08),
+            rgba(47, 107, 255, .18),
             transparent 72%);
 
     z-index: -3;
@@ -112,19 +112,23 @@
 
     padding: 14px 28px;
 
-    background: #edf4ff;
+    background: rgba(47, 107, 255, 0.15);
 
-    border: 1px solid #dbe7ff;
+    backdrop-filter: blur(20px);
+
+    -webkit-backdrop-filter: blur(20px);
+
+    border: 1px solid rgba(120, 80, 255, 0.35);
 
     border-radius: 999px;
 
-    color: var(--primary);
+    color: #e8f0ff;
 
     font-size: 18px;
 
     font-weight: 600;
 
-    box-shadow: 0 10px 25px rgba(47, 107, 255, .08);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4), 0 0 20px rgba(120, 80, 255, 0.2);
 
     margin-bottom: 28px;
 
@@ -258,19 +262,23 @@
 
     padding: 14px 22px;
 
-    background: #fff;
+    background: rgba(255, 255, 255, 0.06);
 
-    border: 1px solid rgba(47, 107, 255, .06);
+    backdrop-filter: blur(30px) saturate(200%);
+
+    -webkit-backdrop-filter: blur(30px) saturate(200%);
+
+    border: 1px solid rgba(255, 255, 255, 0.15);
 
     border-radius: 18px;
 
-    color: var(--text);
+    color: #e8f0ff;
 
     font-size: 15px;
 
     font-weight: 600;
 
-    box-shadow: 0 12px 28px rgba(47, 107, 255, .08);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.45), 0 0 25px rgba(120, 80, 255, 0.15), inset 0 1px 0 rgba(255, 255, 255, 0.08);
 
     transition: all .35s ease;
 
@@ -280,7 +288,11 @@
 
     transform: translateY(-6px);
 
-    box-shadow: 0 20px 40px rgba(47, 107, 255, .16);
+    background: rgba(255, 255, 255, 0.10);
+
+    border-color: rgba(120, 160, 255, 0.4);
+
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5), 0 0 35px rgba(120, 80, 255, 0.3);
 
 }
 
@@ -313,17 +325,21 @@
 
     justify-content: center;
 
-    background: #fff;
+    background: rgba(255, 255, 255, 0.06);
 
-    color: var(--primary);
+    backdrop-filter: blur(30px) saturate(200%);
 
-    border: 1px solid rgba(47, 107, 255, .08);
+    -webkit-backdrop-filter: blur(30px) saturate(200%);
+
+    color: #e8f0ff;
+
+    border: 1px solid rgba(255, 255, 255, 0.15);
 
     border-radius: 18px;
 
     font-size: 21px;
 
-    box-shadow: 0 12px 30px rgba(47, 107, 255, .08);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.45), 0 0 20px rgba(120, 80, 255, 0.15), inset 0 1px 0 rgba(255, 255, 255, 0.08);
 
     transition: all .35s ease;
 
@@ -337,9 +353,11 @@
 
     color: #fff;
 
+    border-color: rgba(120, 160, 255, 0.5);
+
     transform: translateY(-8px);
 
-    box-shadow: 0 20px 45px rgba(47, 107, 255, .25);
+    box-shadow: 0 20px 45px rgba(47, 107, 255, .35), 0 0 40px rgba(120, 80, 255, 0.4);
 
 }
 
@@ -422,11 +440,17 @@
 
 .contact-btn {
 
-    color: var(--text);
+    color: #e8f0ff;
 
-    background: #fff;
+    background: rgba(255, 255, 255, 0.06);
 
-    border: 1px solid var(--border);
+    backdrop-filter: blur(30px) saturate(200%);
+
+    -webkit-backdrop-filter: blur(30px) saturate(200%);
+
+    border: 1px solid rgba(255, 255, 255, 0.15);
+
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.45), inset 0 1px 0 rgba(255, 255, 255, 0.08);
 
 }
 
@@ -434,11 +458,13 @@
 
     color: #fff;
 
-    background: var(--primary);
+    background: linear-gradient(135deg, var(--primary), #6ea8ff);
 
-    border-color: var(--primary);
+    border-color: rgba(120, 160, 255, 0.5);
 
     transform: translateY(-6px);
+
+    box-shadow: 0 20px 40px rgba(47, 107, 255, .35), 0 0 35px rgba(120, 80, 255, 0.3);
 
 }
 
@@ -485,8 +511,8 @@
 
     background:
         radial-gradient(circle,
-            rgba(47, 107, 255, .18) 0%,
-            rgba(47, 107, 255, .08) 45%,
+            rgba(120, 80, 255, .30) 0%,
+            rgba(47, 107, 255, .15) 45%,
             transparent 75%);
 
     animation: glowMove 6s ease-in-out infinite;
@@ -512,7 +538,7 @@
 
     border-radius: 50%;
 
-    border: 2px dashed rgba(47, 107, 255, .18);
+    border: 2px dashed rgba(120, 80, 255, .35);
 
     animation: rotateCircle 35s linear infinite;
 
@@ -535,19 +561,23 @@
 
     border-radius: 50%;
 
-    background: #fff;
+    background: rgba(255, 255, 255, 0.05);
+
+    backdrop-filter: blur(20px);
+
+    -webkit-backdrop-filter: blur(20px);
 
     padding: 10px;
 
-    border: 8px solid #fff;
+    border: 4px solid rgba(255, 255, 255, 0.2);
 
-    filter: drop-shadow(0 30px 45px rgba(47, 107, 255, .18));
+    filter: drop-shadow(0 30px 45px rgba(0, 0, 0, .5));
 
     box-shadow:
 
-        0 20px 60px rgba(47, 107, 255, .18),
+        0 20px 60px rgba(120, 80, 255, .35),
 
-        0 0 0 15px rgba(47, 107, 255, .05);
+        0 0 0 15px rgba(120, 80, 255, .10);
 
     transition: all .45s ease;
 

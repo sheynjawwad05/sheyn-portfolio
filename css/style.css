@@ -20,15 +20,66 @@ html{
 }
 
 body{
+
+    position:relative;
+
     font-family:'Poppins',sans-serif;
-    color:#132238;
+
+    color:#e8f0ff;
+
     background:linear-gradient(
         135deg,
-        #ffffff 0%,
-        #f9fbff 40%,
-        #eef5ff 100%
+        #0a0a1a 0%,
+        #1a0a2e 50%,
+        #0d1b2a 100%
     );
+
     overflow-x:hidden;
+
+}
+
+
+/*==================================================
+        GLOBAL NETWORK BACKGROUND
+==================================================*/
+
+body::before{
+
+    content:"";
+
+    position:fixed;
+
+    inset:-20px;
+
+    background-image:url("../images/network-background.jpg");
+
+    background-size:cover;
+
+    background-position:center;
+
+    background-repeat:no-repeat;
+
+    opacity:.18;
+
+    filter:none;
+
+    transform:scale(1.03);
+
+    pointer-events:none;
+
+    z-index:0;
+
+}
+
+
+/* Keep website content above background */
+
+body > *{
+
+    position:relative;
+
+    z-index:1;
+
 }
 
 img{
@@ -64,19 +115,28 @@ button{
 
     --white:#FFFFFF;
 
-    --bg:#F5F9FF;
+    --bg:#0a0a1a;
 
-    --text:#132238;
+    --text:#e8f0ff;
 
-    --paragraph:#667085;
+    --paragraph:#a0b4d6;
 
-    --border:#E6ECF5;
+    --border:rgba(255,255,255,0.12);
 
-    --shadow:0 20px 60px rgba(37,99,235,.10);
+    --shadow:0 20px 60px rgba(0,0,0,0.5);
 
     --radius:22px;
 
     --transition:.35s ease;
+
+    /* Liquid Glass Tokens */
+    --glass-bg:rgba(255,255,255,0.06);
+    --glass-bg-hover:rgba(255,255,255,0.10);
+    --glass-border:1px solid rgba(255,255,255,0.15);
+    --glass-border-hover:1px solid rgba(120,160,255,0.40);
+    --glass-shadow:0 8px 32px rgba(0,0,0,0.45), inset 0 0 20px rgba(255,255,255,0.03);
+    --glass-glow:0 0 40px rgba(120,80,255,0.22);
+    --glass-blur:blur(30px) saturate(200%);
 
 }
 
@@ -161,17 +221,17 @@ h6{
 
     justify-content:space-between;
 
-    background:rgba(255,255,255,.82);
+    background:rgba(10,10,26,0.65);
 
-    backdrop-filter:blur(18px);
+    backdrop-filter:blur(30px) saturate(200%);
 
-    -webkit-backdrop-filter:blur(18px);
+    -webkit-backdrop-filter:blur(30px) saturate(200%);
 
-    border:1px solid rgba(255,255,255,.45);
+    border:1px solid rgba(255,255,255,0.14);
 
     border-radius:24px;
 
-    box-shadow:var(--shadow);
+    box-shadow:0 8px 32px rgba(0,0,0,0.5), 0 0 30px rgba(120,80,255,0.18), inset 0 1px 0 rgba(255,255,255,0.1);
 
     z-index:1000;
 
@@ -183,9 +243,15 @@ h6{
 
     top:12px;
 
-    background:rgba(255,255,255,.95);
+    background:rgba(10,10,26,0.88);
 
-    box-shadow:0 15px 40px rgba(0,0,0,.10);
+    backdrop-filter:blur(35px) saturate(200%);
+
+    -webkit-backdrop-filter:blur(35px) saturate(200%);
+
+    border-color:rgba(120,80,255,0.30);
+
+    box-shadow:0 15px 40px rgba(0,0,0,0.6), 0 0 35px rgba(120,80,255,0.25);
 
 }
 
@@ -285,7 +351,7 @@ h6{
 
     position:relative;
 
-    color:var(--text);
+    color:#e8f0ff;
 
     font-size:17px;
 
@@ -297,7 +363,7 @@ h6{
 
 .navbar a:hover{
 
-    color:var(--primary);
+    color:#fff;
 
 }
 
@@ -317,7 +383,9 @@ h6{
 
     border-radius:50px;
 
-    background:var(--primary);
+    background:linear-gradient(90deg, var(--primary), #a78bfa);
+
+    box-shadow:0 0 12px rgba(120,80,255,0.6);
 
     transition:width .35s ease;
 
@@ -332,7 +400,7 @@ h6{
 
 .navbar a.active{
 
-    color:var(--primary);
+    color:#fff;
 
 }
 
@@ -357,17 +425,21 @@ h6{
 
     border-radius:18px;
 
-    background:#fff;
+    background:rgba(47,107,255,0.15);
 
-    color:var(--primary);
+    backdrop-filter:blur(20px) saturate(180%);
+
+    -webkit-backdrop-filter:blur(20px) saturate(180%);
+
+    color:#fff;
 
     font-size:16px;
 
     font-weight:700;
 
-    border:1px solid rgba(47,107,255,.08);
+    border:1px solid rgba(120,80,255,0.35);
 
-    box-shadow:0 12px 30px rgba(47,107,255,.12);
+    box-shadow:0 8px 24px rgba(0,0,0,0.4), 0 0 25px rgba(120,80,255,0.2), inset 0 1px 0 rgba(255,255,255,0.15);
 
     transition:all .35s ease;
 
@@ -387,7 +459,9 @@ h6{
         #6ea8ff
     );
 
-    box-shadow:0 18px 40px rgba(47,107,255,.30);
+    border-color:rgba(120,160,255,0.6);
+
+    box-shadow:0 18px 40px rgba(47,107,255,.30), 0 0 40px rgba(120,80,255,0.4);
 
 }
 
@@ -401,21 +475,19 @@ h6{
 
     0%{
 
-        box-shadow:0 0 0 rgba(47,107,255,.10);
+        box-shadow:0 8px 24px rgba(0,0,0,0.4), 0 0 0 rgba(120,80,255,0);
 
     }
 
     50%{
 
-        box-shadow:
-        0 0 20px rgba(47,107,255,.18),
-        0 0 40px rgba(47,107,255,.08);
+        box-shadow:0 8px 24px rgba(0,0,0,0.4), 0 0 30px rgba(120,80,255,0.35);
 
     }
 
     100%{
 
-        box-shadow:0 0 0 rgba(47,107,255,0);
+        box-shadow:0 8px 24px rgba(0,0,0,0.4), 0 0 0 rgba(120,80,255,0);
 
     }
 
@@ -440,9 +512,15 @@ h6{
 
     border-radius:16px;
 
-    background:#edf4ff;
+    background:rgba(47,107,255,0.15);
 
-    color:var(--primary);
+    backdrop-filter:blur(20px);
+
+    -webkit-backdrop-filter:blur(20px);
+
+    border:1px solid rgba(120,80,255,0.3);
+
+    color:#fff;
 
     font-size:22px;
 
@@ -454,9 +532,11 @@ h6{
 
 .menu-btn:hover{
 
-    background:var(--primary);
+    background:rgba(47,107,255,0.35);
 
-    color:#fff;
+    border-color:rgba(120,80,255,0.5);
+
+    box-shadow:0 0 20px rgba(120,80,255,0.3);
 
     transform:scale(1.05);
 
@@ -641,17 +721,17 @@ h6{
 
         padding:30px;
 
-        background:rgba(255,255,255,.96);
+        background:rgba(10,10,26,0.92);
 
-        backdrop-filter:blur(18px);
+        backdrop-filter:blur(30px) saturate(200%);
 
-        -webkit-backdrop-filter:blur(18px);
+        -webkit-backdrop-filter:blur(30px) saturate(200%);
 
         border-radius:22px;
 
-        border:1px solid rgba(47,107,255,.08);
+        border:1px solid rgba(255,255,255,0.14);
 
-        box-shadow:0 25px 60px rgba(0,0,0,.12);
+        box-shadow:0 25px 60px rgba(0,0,0,0.6), 0 0 35px rgba(120,80,255,0.2);
 
         opacity:0;
 
@@ -689,15 +769,17 @@ h6{
 
         border-radius:14px;
 
+        color:#e8f0ff;
+
         transition:.3s ease;
 
     }
 
     .navbar a:hover{
 
-        background:#edf4ff;
+        background:rgba(47,107,255,0.18);
 
-        color:var(--primary);
+        color:#fff;
 
     }
 
