@@ -1273,51 +1273,58 @@ html[data-theme="light"] .section-tag {
 }
 
 
+
 /* =========================================
-   MOBILE MENU - GHOSTING / OVERLAP FIX
+   MOBILE MENU - GHOSTING FIX
 ========================================= */
 
 @media screen and (max-width: 768px) {
 
-    .navbar {
-        background: #f8f9ff !important;
-        opacity: 1;
-        z-index: 9999;
+    .header {
+        position: relative;
+        z-index: 10000;
         isolation: isolate;
+    }
 
+    .navbar.active {
+        position: absolute;
+        z-index: 10001;
+
+        background: #ffffff !important;
+        background-image: none !important;
+
+        opacity: 1 !important;
         backdrop-filter: none !important;
         -webkit-backdrop-filter: none !important;
 
         box-shadow: 0 12px 30px rgba(20, 30, 60, 0.18);
+        isolation: isolate;
     }
 
-    .navbar a {
+    .navbar.active a {
         position: relative;
         z-index: 1;
-        color: #202942;
-        opacity: 1;
+
+        background: transparent !important;
+        color: #202942 !important;
+        opacity: 1 !important;
     }
 
-    .navbar a.active {
-        color: #2F6BFF;
+    .navbar.active a.active {
+        color: #2F6BFF !important;
     }
 
-    html[data-theme="dark"] .navbar {
+    /* Dark Mode */
+    html[data-theme="dark"] .navbar.active {
         background: #171b2b !important;
+        box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
     }
 
-    html[data-theme="dark"] .navbar a {
-        color: #f1f4ff;
+    html[data-theme="dark"] .navbar.active a {
+        color: #f1f4ff !important;
     }
 
-    html[data-theme="dark"] .navbar a.active {
-        color: #6ea8ff;
-    }
-
-    .header {
-        isolation: isolate;
-        z-index: 10000;
+    html[data-theme="dark"] .navbar.active a.active {
+        color: #6ea8ff !important;
     }
 }
-
-
