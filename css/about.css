@@ -862,3 +862,35 @@
     letter-spacing:normal;
 
 }
+
+/* =========================================
+   ABOUT PAGE - LIGHT MODE FIX
+========================================= */
+
+html[data-theme="light"] .info-card {
+    background: rgba(255, 255, 255, 0.88);
+    border-color: rgba(30, 50, 90, 0.15);
+    box-shadow: 0 8px 30px rgba(30, 50, 90, 0.12);
+}
+
+html[data-theme="light"] .info-card h3 {
+    color: #172033;
+}
+
+html[data-theme="light"] .info-card p {
+    color: #4c5870;
+}
+
+html[data-theme="light"] .info-card i,
+html[data-theme="light"] .info-card .icon,
+html[data-theme="light"] .info-card .info-icon {
+    color: #2855b5;
+    background: rgba(47, 107, 255, 0.13);
+}
+
+html[data-theme="light"] .about-badge,
+html[data-theme="light"] .section-tag {
+    color: #244ba5;
+    background: rgba(47, 107, 255, 0.10);
+    border-color: rgba(47, 107, 255, 0.25);
+}

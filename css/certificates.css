@@ -542,3 +542,57 @@
 
 }
 
+
+
+/* =========================================
+   CERTIFICATES PAGE - LIGHT MODE FIX
+========================================= */
+
+html[data-theme="light"] .certificate-card {
+    background: rgba(255, 255, 255, 0.82);
+    border-color: rgba(30, 50, 90, 0.15);
+    box-shadow: 0 8px 32px rgba(30, 50, 90, 0.12);
+}
+
+html[data-theme="light"] .certificate-card:hover {
+    background: rgba(255, 255, 255, 0.96);
+}
+
+html[data-theme="light"] .certificate-content h3,
+html[data-theme="light"] .upcoming-certificates h3 {
+    color: #172033;
+}
+
+html[data-theme="light"] .certificate-org,
+html[data-theme="light"] .certificate-date {
+    color: #4c5870;
+}
+
+html[data-theme="light"] .certificate-org i,
+html[data-theme="light"] .certificate-date i {
+    color: #2F6BFF;
+}
+
+html[data-theme="light"] .certificate-btn {
+    color: #ffffff;
+}
+
+html[data-theme="light"] .learning-tags span {
+    color: #26334d;
+    background: rgba(255, 255, 255, 0.85);
+    border-color: rgba(30, 50, 90, 0.15);
+    box-shadow: 0 8px 24px rgba(30, 50, 90, 0.12);
+}
+
+html[data-theme="light"] .learning-tags span:hover {
+    color: #ffffff;
+    background: linear-gradient(135deg, #2F6BFF, #a78bfa);
+}
+
+html[data-theme="light"] .certificates-title {
+    color: #172033;
+}
+
+html[data-theme="light"] .certificates-description {
+    color: #4c5870;
+}

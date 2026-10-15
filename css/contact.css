@@ -500,3 +500,67 @@
 
 }
 
+
+/* =========================================
+   CONTACT PAGE - LIGHT MODE FIX
+========================================= */
+
+html[data-theme="light"] .contact-box,
+html[data-theme="light"] .contact-form {
+    background: rgba(255, 255, 255, 0.85);
+    border-color: rgba(30, 50, 90, 0.15);
+    box-shadow: 0 8px 32px rgba(30, 50, 90, 0.12);
+}
+
+html[data-theme="light"] .contact-box:hover {
+    background: rgba(255, 255, 255, 0.96);
+}
+
+html[data-theme="light"] .contact-box i {
+    color: #2855b5;
+    background: rgba(47, 107, 255, 0.13);
+}
+
+html[data-theme="light"] .contact-box h4 {
+    color: #172033;
+}
+
+html[data-theme="light"] .contact-box a {
+    color: #4c5870;
+}
+
+html[data-theme="light"] .contact-box a:hover {
+    color: #2F6BFF;
+}
+
+html[data-theme="light"] .contact h2 {
+    color: #172033;
+}
+
+html[data-theme="light"] .contact p {
+    color: #4c5870;
+}
+
+html[data-theme="light"] .contact-form input,
+html[data-theme="light"] .contact-form textarea {
+    color: #172033;
+    background: rgba(255, 255, 255, 0.95);
+    border-color: rgba(30, 50, 90, 0.2);
+}
+
+html[data-theme="light"] .contact-form input::placeholder,
+html[data-theme="light"] .contact-form textarea::placeholder {
+    color: #69758a;
+    opacity: 1;
+}
+
+html[data-theme="light"] .contact-form input:focus,
+html[data-theme="light"] .contact-form textarea:focus {
+    background: #ffffff;
+    border-color: #2F6BFF;
+}
+
+html[data-theme="light"] .contact-form button {
+    color: #ffffff;
+}
+

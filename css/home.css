@@ -1180,3 +1180,45 @@
     }
 
 }
+
+/* =========================================
+   HOME PAGE - LIGHT MODE FIX
+========================================= */
+
+html[data-theme="light"] .hello-badge {
+    color: #244ba5;
+    background: rgba(47, 107, 255, 0.10);
+    border-color: rgba(47, 107, 255, 0.25);
+    box-shadow: 0 8px 24px rgba(30, 50, 90, 0.12);
+}
+
+html[data-theme="light"] .status {
+    color: #26334d;
+    background: rgba(255, 255, 255, 0.82);
+    border-color: rgba(30, 50, 90, 0.15);
+    box-shadow: 0 8px 24px rgba(30, 50, 90, 0.12);
+}
+
+html[data-theme="light"] .social-icons a {
+    color: #2855b5;
+    background: rgba(255, 255, 255, 0.82);
+    border-color: rgba(30, 50, 90, 0.15);
+}
+
+html[data-theme="light"] .social-icons a:hover {
+    color: #ffffff;
+}
+
+html[data-theme="light"] .contact-btn {
+    color: #244ba5;
+    background: rgba(255, 255, 255, 0.82);
+    border-color: rgba(47, 107, 255, 0.25);
+}
+
+html[data-theme="light"] .contact-btn:hover {
+    color: #ffffff;
+}
+
+html[data-theme="light"] .home-content p {
+    color: #4c5870;
+}

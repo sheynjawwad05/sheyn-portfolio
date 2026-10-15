@@ -5,6 +5,47 @@
 
 document.addEventListener("DOMContentLoaded", () => {
 
+
+    /*==========================================
+                DARK / LIGHT MODE
+    ==========================================*/
+
+    const themeToggle = document.getElementById("themeToggle");
+    const savedTheme = localStorage.getItem("portfolio-theme");
+
+    // Default theme: existing dark design
+    const initialTheme = savedTheme === "light" ? "light" : "dark";
+
+    document.documentElement.setAttribute("data-theme", initialTheme);
+
+    function updateThemeToggle(theme) {
+        if (!themeToggle) return;
+
+        const isLight = theme === "light";
+
+        themeToggle.setAttribute("aria-pressed", String(isLight));
+        themeToggle.setAttribute(
+            "aria-label",
+            isLight ? "Switch to dark mode" : "Switch to light mode"
+        );
+    }
+
+    updateThemeToggle(initialTheme);
+
+    if (themeToggle) {
+        themeToggle.addEventListener("click", () => {
+            const currentTheme =
+                document.documentElement.getAttribute("data-theme");
+
+            const newTheme = currentTheme === "dark" ? "light" : "dark";
+
+            document.documentElement.setAttribute("data-theme", newTheme);
+            localStorage.setItem("portfolio-theme", newTheme);
+
+            updateThemeToggle(newTheme);
+        });
+    }
+
     /*==========================================
                 TYPING ANIMATION
     ==========================================*/
