@@ -11,10 +11,10 @@ document.addEventListener("DOMContentLoaded", () => {
     ==========================================*/
 
     const themeToggle = document.getElementById("themeToggle");
-    const savedTheme = localStorage.getItem("portfolio-theme");
+const savedTheme = localStorage.getItem("portfolio-theme");
 
-    // Default theme: existing dark design
-    const initialTheme = savedTheme === "light" ? "light" : "dark";
+// Default theme: Light Mode
+const initialTheme = savedTheme === "dark" ? "dark" : "light";
 
     document.documentElement.setAttribute("data-theme", initialTheme);
 

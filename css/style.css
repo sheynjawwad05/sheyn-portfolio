@@ -1272,3 +1272,52 @@ html[data-theme="light"] .section-tag {
     }
 }
 
+
+/* =========================================
+   MOBILE MENU - GHOSTING / OVERLAP FIX
+========================================= */
+
+@media screen and (max-width: 768px) {
+
+    .navbar {
+        background: #f8f9ff !important;
+        opacity: 1;
+        z-index: 9999;
+        isolation: isolate;
+
+        backdrop-filter: none !important;
+        -webkit-backdrop-filter: none !important;
+
+        box-shadow: 0 12px 30px rgba(20, 30, 60, 0.18);
+    }
+
+    .navbar a {
+        position: relative;
+        z-index: 1;
+        color: #202942;
+        opacity: 1;
+    }
+
+    .navbar a.active {
+        color: #2F6BFF;
+    }
+
+    html[data-theme="dark"] .navbar {
+        background: #171b2b !important;
+    }
+
+    html[data-theme="dark"] .navbar a {
+        color: #f1f4ff;
+    }
+
+    html[data-theme="dark"] .navbar a.active {
+        color: #6ea8ff;
+    }
+
+    .header {
+        isolation: isolate;
+        z-index: 10000;
+    }
+}
+
+
